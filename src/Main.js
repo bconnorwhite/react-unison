@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import { View, Text, Link, Style, H1 } from './infinite';
+import { Div, A, Style, H1, P, Code } from './infinite';
 
 export default class Main extends Component {
   render() {
     return (
-      <View style={styles.app}>
-        <View style={styles.header}>
+      <Div style={styles.app}>
+        <Div style={styles.header}>
           <H1>React Infinite</H1>
-          <Text style={styles.text}>
-            Edit <Text tag="code">src/App.js</Text> and save to reload.
-          </Text>
-          <Link style={styles.link} href="https://reactjs.org">
+          <P style={styles.text}>
+            Edit <Code tag="code">src/App.js</Code> and save to reload.
+          </P>
+          <A style={styles.a} href="https://reactjs.org">
             Learn React
-          </Link>
-        </View>
-      </View>
+          </A>
+        </Div>
+      </Div>
     );
   }
 }
@@ -44,7 +44,7 @@ const styles = Style.create({
     textAlign: 'center',
     paddingBottom: "1rem"
   },
-  link: {
+  a: {
     color: "#61dafb"
   }
 });

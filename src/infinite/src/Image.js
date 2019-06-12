@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { View, Image } from 'react-native';
+import Union from './Union';
 
-export default class InfiniteView extends Component {
+export default class InfiniteImage extends Component {
   render() {
-    if(process.browser) {
-      return (
-        <img {...this.props}>{this.props.children}</img>
-      );
-    } else {
-      return (
-        <Image source={{uri: this.props.src}} />
-      );
-    }
+    return (
+      <Union
+        {...this.props}
+        defaultStyle={{
+          display: "inline-block"
+        }}
+        web={<img />}
+        native={<Image source={{uri: this.props.src}} />} />
+    );
   }
 }

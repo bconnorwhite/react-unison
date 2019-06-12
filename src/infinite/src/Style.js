@@ -17,11 +17,23 @@ function displayMap(display) {
   return display == "flex" || display == "none" ? display : "flex";
 }
 
+function textDecorationMap(textDecoration) {
+  return {
+    alias: "textDecorationLine",
+    value: textDecoration.replace("overline", "")
+  }
+}
+
 function map(styles, guide) {
   let retval = {};
   Object.keys(styles).forEach((key) => {
     if(guide[key] instanceof Function) {
-      retval[key] = guide[key](styles[key]);
+      let result = guide[key](styles[key]);
+      if(result instanceof Object && result.alias) {
+        retval[result.alias] = result.value;
+      } else {
+        retval[key] = result;
+      }
     } else if(styles[key] instanceof Object && guide[key] instanceof Object) {
       retval[key] = map(styles[key], guide[key]);
     } else {
@@ -88,6 +100,7 @@ const styleToNative = (style) => map(style, {
     height: sizeMap
   },
   fontSize: sizeMap,
+  textDecoration: textDecorationMap,
   textShadowRadius: sizeMap
 });
 
