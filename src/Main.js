@@ -8,7 +8,7 @@ export default class Main extends Component {
         <Div style={styles.header}>
           <H1>React Infinite</H1>
           <P style={styles.text}>
-            Edit <Code tag="code">src/App.js</Code> and save to reload.
+            Edit <Code>src/App.js</Code> and save to reload.
           </P>
           <A style={styles.a} href="https://reactjs.org">
             Learn React

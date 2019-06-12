@@ -9,6 +9,9 @@ export default class InfiniteUnion extends Component {
       default: this.props.defaultStyle
     });
     props.style = deepmerge(styles.default, this.props.style || {});
+    delete props.defaultStyle;
+    delete props.web;
+    delete props.native;
     if(process.browser) {
       return React.cloneElement(this.props.web, props, this.props.children);
     } else {
