@@ -1,5 +1,5 @@
 {
-  "name": "react-infinite",
+  "name": "create-react-infinite",
   "version": "0.1.0",
   "description": "A framework for building native and web apps with one codebase using React.",
   "author": "Connor White",
@@ -26,6 +26,7 @@
     "babel-preset-expo": "^5.1.1"
   },
   "eslintConfig": {
+    "exclude": "src/infinite",
     "extends": "react-app"
   },
   "browserslist": {

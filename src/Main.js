@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import { View, Text, Link, Style } from './infinite';
+import { View, Text, Link, Style, H1 } from './infinite';
 
 export default class Main extends Component {
   render() {
     return (
       <View style={styles.app}>
         <View style={styles.header}>
-          <Text>
+          <H1>React Infinite</H1>
+          <Text style={styles.text}>
             Edit <Text tag="code">src/App.js</Text> and save to reload.
           </Text>
           <Link style={styles.link} href="https://reactjs.org">
@@ -36,8 +36,13 @@ const styles = Style.create({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
-    color: 'white'
+    justifyContent: 'center'
+  },
+  text: {
+    color: "white",
+    fontSize: '1.5rem',
+    textAlign: 'center',
+    paddingBottom: "1rem"
   },
   link: {
     color: "#61dafb"
