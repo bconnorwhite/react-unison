@@ -26,3 +26,9 @@ npm run build-web
 - App.js is the entry point for React Native, src/index.js is the entry point for web.
 - Both of these call into src/Main.js, which uses components in src/infinite.
 - Components in src/infinite use process.browser to detect web vs. native. I'm not sure if this is reliable or not, but has worked so far.
+
+
+## Challenges
+
+- Styling will be different between web / native. Some rules will only be supported on one or the other, some will need a different rule for each.
+- Since navigation is so core to native, this will probably end up with a standard navigation component that handles navigation / routing, and makes the web version a single page app by default. This seems to be a common library on mobile: https://reactnavigation.org/docs/en/hello-react-navigation.html
