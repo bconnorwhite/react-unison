@@ -6,7 +6,7 @@ export default class Main extends Component {
     return (
       <Div style={styles.app}>
         <Div style={styles.header}>
-          <H1>React Infinite</H1>
+          <H1 style={styles.h1}>React Infinite</H1>
           <P style={styles.text}>
             Edit <Code>src/App.js</Code> and save to reload.
           </P>
@@ -37,6 +37,9 @@ const styles = Style.create({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  h1: {
+    color: 'white'
   },
   text: {
     color: "white",

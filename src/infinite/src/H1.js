@@ -8,6 +8,7 @@ export default class InfiniteH1 extends Component {
       <Union
         {...this.props}
         defaultStyle={{
+          fontFamily: "serif",
           display: 'block',
           fontSize: '2em',
           marginTop: '0.67em',

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, Image } from 'react-native';
 import Union from './Union';
 
-export default class InfiniteImage extends Component {
+export default class InfiniteImg extends Component {
   render() {
     return (
       <Union

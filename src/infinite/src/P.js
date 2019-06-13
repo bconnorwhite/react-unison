@@ -8,6 +8,7 @@ export default class InfiniteP extends Component {
       <Union
         {...this.props}
         defaultStyle={{
+          fontFamily: "serif",
           display: 'block',
           marginTop: '1em',
           marginBottom: '1em',

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, Platform } from 'react-native';
+import { Text } from 'react-native';
 import Union from './Union';
 
 export default class InfiniteCode extends Component {
@@ -8,7 +8,7 @@ export default class InfiniteCode extends Component {
       <Union
         {...this.props}
         defaultStyle={{
-          fontFamily: Platform.OS == 'ios' ? 'Menlo' : 'monospace'
+          fontFamily: 'monospace'
         }}
         web={<code />}
         native={<Text />} />

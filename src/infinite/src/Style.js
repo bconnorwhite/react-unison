@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 function sizeMap(size) { //TODO: support em, vh, vw
   if(isNaN(size)) {
@@ -11,6 +11,19 @@ function sizeMap(size) { //TODO: support em, vh, vw
     }
   }
   return size;
+}
+
+function fontFamilyMap(fontFamily) {
+  if(Platform.OS == 'ios') {
+    if(fontFamily == "monospace") {
+      return "Menlo"
+    } else if(fontFamily == "serif") {
+      return "Times New Roman";
+    } else if(fontFamily == "sans-serif") {
+      return "San Francisco";
+    }
+  }
+  return fontFamily;
 }
 
 function displayMap(display) {
@@ -99,6 +112,7 @@ const styleToNative = (style) => map(style, {
     width: sizeMap,
     height: sizeMap
   },
+  fontFamily: fontFamilyMap,
   fontSize: sizeMap,
   textDecoration: textDecorationMap,
   textShadowRadius: sizeMap

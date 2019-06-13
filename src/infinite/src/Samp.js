@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, Platform } from 'react-native';
+import { Text } from 'react-native';
 import Union from './Union';
 
 export default class InfiniteSamp extends Component {
@@ -8,7 +8,7 @@ export default class InfiniteSamp extends Component {
       <Union
         {...this.props}
         defaultStyle={{
-          fontFamily: Platform.OS == 'ios' ? 'Menlo' : 'monospace'
+          fontFamily: 'monospace'
         }}
         web={<samp />}
         native={<Text />} />
