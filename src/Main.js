@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Div, A, Style, H1, P, Code } from './infinite';
+import { Div, A, Style, H1, P, Code } from './unison';
 
 export default class Main extends Component {
   render() {
     return (
       <Div style={styles.app}>
         <Div style={styles.header}>
-          <H1 style={styles.h1}>React Infinite</H1>
+          <H1 style={styles.h1}>React Unison</H1>
           <P style={styles.text}>
             Edit <Code>src/App.js</Code> and save to reload.
           </P>
