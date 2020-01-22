@@ -17,6 +17,8 @@ import Code from './src/Code';
 import Samp from './src/Samp';
 import Blockquote from './src/Blockquote';
 import A from './src/A';
+import Img from './src/Img';
+import Svg from './src/Svg';
 
 export {
   Union,
@@ -32,5 +34,7 @@ export {
   Code,
   Samp,
   Blockquote,
-  A
+  A,
+  Img,
+  Svg
 }

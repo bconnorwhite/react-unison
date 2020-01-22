@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text } from 'react-native';
 import Union from './Union';
 
-export default class InfiniteH2 extends Component {
+export default class UnisonH2 extends Component {
   render() {
     return (
       <Union

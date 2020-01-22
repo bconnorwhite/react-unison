@@ -37,7 +37,7 @@ npm run build-web
 
 ### Challenges
 
-- Styling will be different between web / native. Some rules will only be supported on one or the other, some will need a different rule for each.
+- Styling will be different between web / native. Some rules will only be supported on one or the other, some will need a different rule for each: https://www.w3schools.com/cssref/css_default_values.asp
 - Since navigation is so core to native, this will probably end up with a standard navigation component that handles navigation / routing, and makes the web version a single page app by default. This seems to be a common library on mobile: https://reactnavigation.org/docs/en/hello-react-navigation.html
 - Fonts
 - Image types

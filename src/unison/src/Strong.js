@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text } from 'react-native';
 import Union from './Union';
 
-export default class InfiniteStrong extends Component {
+export default class UnisonStrong extends Component {
   render() {
     return (
       <Union

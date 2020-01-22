@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text } from 'react-native';
 import Union from './Union';
 
-export default class InfiniteBlockquote extends Component {
+export default class UnisonBlockquote extends Component {
   render() {
     return (
       <Union

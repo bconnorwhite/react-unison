@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Div, A, Style, H1, P, Code } from './unison';
+import { Div, A, Style, H1, P, Code, Img, Svg } from './unison';
+
 
 export default class Main extends Component {
   render() {
@@ -13,11 +14,13 @@ export default class Main extends Component {
           <A style={styles.a} href="https://reactjs.org">
             Learn React
           </A>
+          <Svg width="200" height="200" source={{uri:'http://thenewcode.com/assets/images/thumbnails/homer-simpson.svg'}} />
         </Div>
       </Div>
     );
   }
 }
+//          <Img src={require('./images/react.svg')} />
 
 const styles = Style.create({
   app: {
